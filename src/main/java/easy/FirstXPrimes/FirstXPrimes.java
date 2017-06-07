@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * https://www.codeeval.com/open_challenges/4/
+ */
 public class FirstXPrimes {
 
     public static List<Integer> getFirstXPrimes(int x) {
@@ -16,7 +19,7 @@ public class FirstXPrimes {
 
     public static Integer getSumOfFirstXPrimes(int x) {
         return getFirstXPrimes(x).stream()
-                .reduce(0,(a, b) -> a+b);
+                .reduce(0, (a, b) -> a + b);
     }
 
     private static boolean isPrime(Integer n) {
